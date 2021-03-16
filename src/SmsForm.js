@@ -9,7 +9,7 @@ function SmsForm() {
     event.preventDefault();
 
     let smsObj = {
-        user_number: '1' + number,
+        mobile_number: '1' + number,
         message: sms,
     }
    
@@ -22,8 +22,7 @@ function SmsForm() {
         body: JSON.stringify(smsObj)
     })
     .then(resp => resp.json())
-    .then(result => console.log(result))
-    .catch(error => console.log(error))
+    .then(resp => console.log(resp))
 }
 
   const handleChange = (event) => {
@@ -57,6 +56,7 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   height: 100vh;
+  background-color: #C8A2C8;
 `
 
 const Header = styled.h3`

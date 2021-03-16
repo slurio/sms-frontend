@@ -1,11 +1,8 @@
 import SmsForm from './SmsForm';
 
 function App() {
-  
   return (
-    <>
       <SmsForm />
-    </>
   );
 }
 
